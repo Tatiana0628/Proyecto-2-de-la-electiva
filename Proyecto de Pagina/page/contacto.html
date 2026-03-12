@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Tulipanes Moreno</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body class="site-grid" id="inicio">
+    <header class="hero">
+        <div class="hero__contenido">
+            <p class="hero__etiqueta">Página secundaria</p>
+            <h1 class="hero__titulo">Contacto</h1>
+            <p class="hero__descripcion">
+                Esta sección incluye un formulario sencillo de contacto, manteniendo la misma identidad visual del sitio.
+            </p>
+
+            <nav class="nav nav--principal" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../index.html#historia">Historia</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../index.html#cuidados">Cuidados</a></li>
+                    <li class="nav__item"><a class="nav__link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav__item"><a class="nav__link" href="contacto.html">Contacto</a></li>
+                    <li class="nav__item"><a class="nav__link" href="tulipanes.html">Tulipanes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="principal">
+        <section class="bloque">
+            <article class="bloque__card">
+                <div class="bloque__media">
+                    <img src="../assets/image/Imagen2.png" alt="Imagen decorativa de contacto" class="bloque__imagen">
+                    <span class="bloque__badge">Formulario</span>
+                </div>
+
+                <div class="bloque__texto">
+                    <h2 class="bloque__titulo">Envíanos un mensaje</h2>
+                    <p class="bloque__parrafo">
+                        Completa el siguiente formulario para comunicarte y compartir tus comentarios sobre el sitio.
+                    </p>
+
+                    <form class="formulario">
+                        <div class="formulario__grupo">
+                            <label for="nombre" class="formulario__label">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="formulario__input" placeholder="Escribe tu nombre">
+                        </div>
+
+                        <div class="formulario__grupo">
+                            <label for="correo" class="formulario__label">Correo</label>
+                            <input type="email" id="correo" name="correo" class="formulario__input" placeholder="Escribe tu correo">
+                        </div>
+
+                        <div class="formulario__grupo">
+                            <label for="mensaje" class="formulario__label">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" class="formulario__textarea" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+
+                        <button type="submit" class="boton">Enviar</button>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <h2 class="sidebar__titulo">Información de contacto</h2>
+        <div class="sidebar__grupo">
+            <h3 class="sidebar__subtitulo">Medios disponibles</h3>
+            <ul class="sidebar__lista">
+                <li class="sidebar__item">Teléfono: 312346452</li>
+                <li class="sidebar__item">Correo: tulipanesmoreno@gmail.com</li>
+                <li class="sidebar__item">Ciudad: Cali</li>
+            </ul>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <p class="footer__texto">Creado por: Tatiana Moreno</p>
+        <p class="footer__texto">Año actual: <span id="anio"></span></p>
+    </footer>
+
+    <a href="#inicio" class="boton-fijo" aria-label="Volver al inicio">↑</a>
+
+    <script>
+        document.getElementById("anio").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

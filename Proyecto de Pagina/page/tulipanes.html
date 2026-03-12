@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulipanes | Tulipanes Moreno</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body class="site-grid" id="inicio">
+    <header class="hero">
+        <div class="hero__contenido">
+            <p class="hero__etiqueta">Página temática</p>
+            <h1 class="hero__titulo">Más sobre los tulipanes</h1>
+            <p class="hero__descripcion">
+                En esta página se amplía la información sobre colores, significado y características principales
+                de esta flor tan reconocida.
+            </p>
+
+            <nav class="nav nav--principal" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../index.html#historia">Historia</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../index.html#cuidados">Cuidados</a></li>
+                    <li class="nav__item"><a class="nav__link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav__item"><a class="nav__link" href="contacto.html">Contacto</a></li>
+                    <li class="nav__item"><a class="nav__link" href="tulipanes.html">Tulipanes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="principal">
+        <section class="bloque bloque--destacado">
+            <article class="bloque__card">
+                <div class="bloque__media">
+                    <img src="../assets/image/imagen3.png" alt="Tulipanes de colores variados" class="bloque__imagen">
+                    <span class="bloque__badge">Belleza natural</span>
+                </div>
+
+                <div class="bloque__texto">
+                    <h2 class="bloque__titulo">Colores y significados</h2>
+                    <p class="bloque__parrafo">
+                        Los tulipanes pueden encontrarse en colores rojos, amarillos, rosados, blancos, morados y naranjas.
+                        Cada color transmite una sensación distinta, como amor, amistad, pureza o alegría.
+                    </p>
+                    <p class="bloque__parrafo">
+                        Gracias a esa variedad, son utilizados tanto en jardines como en decoraciones y obsequios especiales.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="bloque">
+            <h2 class="bloque__titulo">Características principales</h2>
+            <div class="cuidados">
+                <div class="cuidados__item">
+                    <img src="../assets/image/imagen1.png" alt="Tulipán rosado" class="cuidados__imagen">
+                    <h3 class="cuidados__titulo">Forma elegante</h3>
+                    <p class="cuidados__texto">
+                        Su forma sencilla y estilizada las convierte en flores muy atractivas visualmente.
+                    </p>
+                </div>
+
+                <div class="cuidados__item">
+                    <img src="../assets/image/Imagen2.png" alt="Tulipanes morados" class="cuidados__imagen">
+                    <h3 class="cuidados__titulo">Variedad de colores</h3>
+                    <p class="cuidados__texto">
+                        Existen numerosas tonalidades que permiten diferentes usos decorativos.
+                    </p>
+                </div>
+
+                <div class="cuidados__item">
+                    <img src="../assets/image/imagen3.png" alt="Tulipanes rojos y amarillos" class="cuidados__imagen">
+                    <h3 class="cuidados__titulo">Gran valor ornamental</h3>
+                    <p class="cuidados__texto">
+                        Son flores muy apreciadas por su presencia en jardines, parques y arreglos florales.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <h2 class="sidebar__titulo">Dato curioso</h2>
+        <div class="sidebar__grupo sidebar__grupo--resaltado">
+            <h3 class="sidebar__subtitulo">Tulipomanía</h3>
+            <p class="sidebar__texto">
+                En la historia europea, los tulipanes llegaron a tener un valor económico muy alto,
+                convirtiéndose en símbolo de lujo y exclusividad.
+            </p>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <p class="footer__texto">Creado por: Tatiana Moreno</p>
+        <p class="footer__texto">Año actual: <span id="anio"></span></p>
+    </footer>
+
+    <a href="#inicio" class="boton-fijo" aria-label="Volver al inicio">↑</a>
+
+    <script>
+        document.getElementById("anio").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

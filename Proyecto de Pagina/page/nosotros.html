@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Tulipanes Moreno</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+</head>
+<body class="site-grid" id="inicio">
+    <header class="hero">
+        <div class="hero__contenido">
+            <p class="hero__etiqueta">Página secundaria</p>
+            <h1 class="hero__titulo">Nosotros</h1>
+            <p class="hero__descripcion">
+                En esta sección se explica el propósito del proyecto y la intención de presentar
+                una página organizada, atractiva y académicamente correcta.
+            </p>
+
+            <nav class="nav nav--principal" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../index.html#historia">Historia</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../index.html#cuidados">Cuidados</a></li>
+                    <li class="nav__item"><a class="nav__link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav__item"><a class="nav__link" href="contacto.html">Contacto</a></li>
+                    <li class="nav__item"><a class="nav__link" href="tulipanes.html">Tulipanes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="principal">
+        <section class="bloque">
+            <article class="bloque__card">
+                <div class="bloque__media">
+                    <img src="../assets/image/imagen1.png" alt="Tulipanes representando el proyecto" class="bloque__imagen">
+                    <span class="bloque__badge">Proyecto académico</span>
+                </div>
+
+                <div class="bloque__texto">
+                    <h2 class="bloque__titulo">¿Quiénes somos?</h2>
+                    <p class="bloque__parrafo">
+                        Este proyecto fue creado como parte de una práctica académica de desarrollo web,
+                        con el objetivo de aplicar correctamente etiquetas semánticas, estilos externos
+                        y una organización visual clara.
+                    </p>
+                    <p class="bloque__parrafo">
+                        La temática de los tulipanes permite trabajar un sitio con contenido visual,
+                        secciones informativas y una presentación agradable para el usuario.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="bloque">
+            <h2 class="bloque__titulo">Nuestro objetivo</h2>
+            <p class="bloque__parrafo">
+                Presentar información de forma ordenada, con una estructura moderna y fácil de entender,
+                demostrando el uso de HTML5, CSS, Flexbox, Grid y buenas prácticas de maquetación.
+            </p>
+        </section>
+    </main>
+
+    <aside class="sidebar">
+        <h2 class="sidebar__titulo">Datos importantes</h2>
+        <div class="sidebar__grupo">
+            <h3 class="sidebar__subtitulo">Aspectos del proyecto</h3>
+            <ul class="sidebar__lista">
+                <li class="sidebar__item">Diseño claro y limpio</li>
+                <li class="sidebar__item">Estructura semántica</li>
+                <li class="sidebar__item">Uso de imágenes</li>
+                <li class="sidebar__item">Contenido informativo</li>
+            </ul>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <p class="footer__texto">Creado por: Tatiana Moreno</p>
+        <p class="footer__texto">Año actual: <span id="anio"></span></p>
+    </footer>
+
+    <a href="#inicio" class="boton-fijo" aria-label="Volver al inicio">↑</a>
+
+    <script>
+        document.getElementById("anio").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

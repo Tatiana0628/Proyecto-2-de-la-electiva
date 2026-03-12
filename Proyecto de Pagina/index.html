@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulipanes Moreno | Sitio informativo</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body class="site-grid" id="inicio">
+    <header class="hero">
+        <div class="hero__contenido">
+            <p class="hero__etiqueta">Evaluación práctica de desarrollo web</p>
+            <h1 class="hero__titulo">Tulipanes Moreno</h1>
+            <p class="hero__descripcion">
+                Sitio informativo dedicado a los tulipanes, su historia, su simbolismo y sus cuidados básicos.
+             
+            </p>
+
+            <nav class="nav nav--principal" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#inicio">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#historia">Historia</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#cuidados">Cuidados</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#datos">Datos rápidos</a></li>
+                    <li class="nav__item"><a class="nav__link" href="page/nosotros.html">Nosotros</a></li>
+                    <li class="nav__item"><a class="nav__link" href="page/contacto.html">Contacto</a></li>
+                    <li class="nav__item"><a class="nav__link" href="page/tulipanes.html">Tulipanes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="principal">
+        <section class="bloque bloque--destacado" id="historia">
+            <article class="bloque__card">
+                <div class="bloque__media">
+                    <img src="assets/image/imagen1.png" alt="Tulipanes rosados en primer plano" class="bloque__imagen">
+                    <span class="bloque__badge">Flor emblemática</span>
+                </div>
+
+                <div class="bloque__texto">
+                    <h2 class="bloque__titulo">Historia y significado de los tulipanes</h2>
+                    <p class="bloque__parrafo">
+                        Los tulipanes son flores reconocidas por su elegancia, variedad de colores y fuerte valor simbólico.
+                        Aunque muchas personas los asocian con los Países Bajos, su origen histórico se relaciona con Asia Central
+                        y su expansión en Europa los convirtió en una de las flores más apreciadas en jardines y arreglos decorativos.
+                    </p>
+                    <p class="bloque__parrafo">
+                        Dependiendo de su color, un tulipán puede representar amor, alegría, paz o admiración. Por eso se utilizan
+                        tanto en celebraciones como en espacios ornamentales. Además de su belleza, destacan por su forma simple,
+                        limpia y muy llamativa.
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="bloque bloque--columnas" id="cuidados">
+            <h2 class="bloque__titulo">Cuidados esenciales para conservarlos</h2>
+            <div class="cuidados">
+                <div class="cuidados__item">
+                    <img src="assets/image/Imagen2.png" alt="Tulipanes morados en maceta" class="cuidados__imagen">
+                    <h3 class="cuidados__titulo">Luz adecuada</h3>
+                    <p class="cuidados__texto">
+                        Necesitan buena iluminación natural. Un lugar con luz suave o sol moderado ayuda a mantener su color y forma.
+                    </p>
+                </div>
+
+                <div class="cuidados__item">
+                    <img src="assets/image/imagen3.png" alt="Tulipanes amarillos y rojos" class="cuidados__imagen">
+                    <h3 class="cuidados__titulo">Riego controlado</h3>
+                    <p class="cuidados__texto">
+                        El exceso de agua puede afectar el bulbo. Lo ideal es mantener la tierra húmeda, pero sin encharcamientos.
+                    </p>
+                </div>
+
+                <div class="cuidados__item">
+                    <img src="assets/image/imagen1.png" alt="Detalle de pétalos de tulipán" class="cuidados__imagen">
+                    <h3 class="cuidados__titulo">Temperatura fresca</h3>
+                    <p class="cuidados__texto">
+                        Los tulipanes se desarrollan mejor en ambientes frescos. Temperaturas muy altas reducen su duración.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside class="sidebar" id="datos">
+        <h2 class="sidebar__titulo">Datos rápidos</h2>
+        <p class="sidebar__texto">
+           Los tulipanes pertenecen a la familia de las liliáceas y existen más de 3,000 variedades. Son originarios de Asia Central y fueron introducidos en Europa en el siglo XVI, donde se convirtieron en un símbolo de estatus y belleza.
+        </p>
+
+        <div class="sidebar__grupo">
+            <h3 class="sidebar__subtitulo">Características destacadas de los tulipanes</h3>
+            <ul class="sidebar__lista">
+                <li class="sidebar__item">Forma elegante y estilizada</li>
+                <li class="sidebar__item">Variedad de colores</li>
+                <li class="sidebar__item">Gran valor ornamental</li>
+                <li class="sidebar__item">Fácil de cultivar</li>
+            </ul>
+        </div>
+
+        <div class="sidebar__grupo sidebar__grupo--resaltado">
+            <h3 class="sidebar__subtitulo">Tema del sitio</h3>
+            <p class="sidebar__texto">
+                Los tulipanes son una excelente temática para una página informativa porque permiten combinar contenido visual,
+                texto organizado y secciones bien diferenciadas.
+            </p>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <p class="footer__texto">Creado por: Tatiana Moreno</p>
+        <p class="footer__texto">Año actual: <span id="anio"></span></p>
+    </footer>
+
+    <a href="#inicio" class="boton-fijo" aria-label="Volver al inicio">↑</a>
+
+    <script>
+        document.getElementById("anio").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

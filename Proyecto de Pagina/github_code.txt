@@ -1,0 +1,15 @@
+cd "C:\ruta\de\tu\proyecto"
+git init
+
+git add .
+git commit -m "feat: crear estructura semantica base del sitio"
+
+git add .
+git commit -m "style: aplicar css externo y metodologia BEM"
+
+git add .
+git commit -m "feat: agregar grid, flexbox y position"
+
+git branch -M main
+git remote add origin https://github.com/USUARIO/NOMBRE-REPOSITORIO.git
+git push -u origin main
